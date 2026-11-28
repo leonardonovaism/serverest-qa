@@ -37,7 +37,7 @@ describe('Cadastro', ()=>{
         cy.validarCadastroEmailExistente()
     })
 
-    it.only('Cadastro sem informar a senha', ()=>{
+    it('Cadastro sem informar a senha', ()=>{
         //act
         cy.preencherCadastroSemSenha('João da Silva', 'joao.teste@example.com')
         cy.cadastrar()
